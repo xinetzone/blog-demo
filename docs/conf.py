@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'nocode-book'
+project = 'blog-demo'
 copyright = '2021, xinetzone'
 author = 'xinetzone'
 
@@ -76,7 +76,7 @@ comments_config = {
     "hypothesis": True,
     "dokieli": False,
     "utterances": {
-        "repo": "xinetzone/nocode-book",
+        "repo": "xinetzone/blog-demo",
         "optional": "config",
     }
 }
@@ -146,24 +146,14 @@ html_css_files = ["default.css"]
 
 # -- 国际化输出 ----------------------------------------------------------------
 
-# locale_dirs = ['../locales/']  # path is example but recommended.
-# gettext_compact = False  # optional.
+locale_dirs = ['../locales/']  # path is example but recommended.
+gettext_compact = True  # optional.
 
 # -- 主题设置 -------------------------------------------------------------------
 
 # 定制主侧栏
 html_sidebars = {
-    "*": [
-        # 显示标志和网站标题。
-        "sidebar-logo.html",
-        #一个基于 bootstrap 的搜索栏（来自 PyData Sphinx Theme）
-        "search-field.html",
-        # 一个用于你的书基于 bootstrap 的导航菜单。
-        "sbt-sidebar-nav.html",
-        # 一个 可配置的 HTML 片段，用于添加到侧边栏（默认情况下，它被放置在底部）。
-        "sbt-sidebar-footer.html",
-    ],
-    "posts/**": [
+    "**": [
         "postcard.html",
         "recentposts.html",
         "tagcloud.html",
@@ -184,7 +174,7 @@ html_theme_options = {
     # 默认情况下，编辑按钮将指向版本库的根。
     # 如果你的文档被托管在一个子文件夹中，请使用以下配置：
     "path_to_docs": "docs/",  # 文档的路径，默认 `docs/``
-    "repository_url": "https://github.com/xinetzone/nocode-book",
+    "repository_url": "https://github.com/xinetzone/blog-demo",
     "repository_branch": "main",  # 文档库的分支，默认 `master`
     # -- 在导航栏添加一个按钮，链接到版本库的议题 ------------------------------
     # （与 `repository_url` 和 `repository_branch` 一起使用）
@@ -215,7 +205,7 @@ html_theme_options = {
     # 重命名页内目录名称
     "toc_title": "导航",
     "launch_buttons": {
-        # https://mybinder.org/v2/gh/xinetzone/nocode-book/main
+        # https://mybinder.org/v2/gh/xinetzone/blog-demo/main
         "binderhub_url": "https://mybinder.org",
         # "jupyterhub_url": "https://datahub.berkeley.edu",  # For testing
         "colab_url": "https://colab.research.google.com/",
@@ -235,9 +225,9 @@ html_favicon = "../_static/page-logo.jfif"
 # html_title = '动手学习 Python'
 
 # ========== ABlog 配置 ============================================================
-blog_path = "posts"
-blog_post_pattern = "posts/*.md"
-blog_baseurl = "https://xinetzone.github.io/nocode-book"
+blog_path = "docs"
+blog_post_pattern = "docs/*.md"
+blog_baseurl = "https://xinetzone.github.io/blog-demo"
 fontawesome_included = True
 post_auto_image = 1
 post_auto_excerpt = 2

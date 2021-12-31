@@ -1,14 +1,13 @@
-```{include} ../README.md
+```{post} 2021/12/31 23:00
 ```
 
-```{toctree}
-:maxdepth: 2
-:hidden:
+# 上善若水
 
-start/index
+```{postlist}
 ```
 
-# 索引与表格
+
+## 索引与表格
 
 * {ref}`genindex`
 * {ref}`modindex`
