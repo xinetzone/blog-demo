@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>数学 &#8212; nocode-book 0.1 文档</title>
+    <title>帖子 Chinese &#8212; blog-demo 0.1 文档</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -65,7 +65,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/nocode-book");
+    script.setAttribute("repo", "xinetzone/blog-demo");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -82,22 +82,11 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script src="../../_static/translations.js"></script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".cell"
-        const thebe_selector_input = ".cell_input div.highlight"
-        const thebe_selector_output = ".cell_output"
-    </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../../genindex.html" />
-    <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="基础" href="basic.html" />
-    <link rel="prev" title="叙事" href="../narrative.html" /> 
+    <link rel="search" title="搜索" href="../../search.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -107,8 +96,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <link
   rel="alternate"
   type="application/atom+xml"
-  href="../../posts/atom.xml"
-  title="Blog"
+  href="../../docs/atom.xml"
+  title="帖子 Chinese"
 />
  
 <style type="text/css">
@@ -148,100 +137,87 @@ commentsRunWhenDOMLoaded(addUtterances);
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
-      
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
-      
-      
-      <img src="../../_static/logo.jpg" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">nocode-book 0.1 文档</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="../index.html">
-   快速上手
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../narrative.html">
-     叙事
-    </a>
-   </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
-     数学
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="basic.html">
-       基础
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="special-symbols.html">
-       特殊符号
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="matrix.html">
-       矩阵
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="other.html">
-       其他
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../glossary-todolist.html">
-     术语与待办
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../code.html">
-     代码
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../mermaid.html">
-     Mermaid
-    </a>
-   </li>
-  </ul>
- </li>
+<h3>
+  <a href="../../docs.html">最近帖子</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../test.html"
+      >Dec 31, 2021 - 测试</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../index.html"
+      >Dec 31, 2021 - 上善若水</a
+    >
+  </li>
+  
 </ul>
 
-    </div>
-</nav> <!-- To handle the deprecated key -->
+<h3><a href="../tag.html">标签</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+   
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../tag/basic.html">basic</a>
+  </li>
+   
+</ul>
 
-<div class="navbar_extra_footer">
-  <div>
-版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
-<div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
+<h3>
+  <a href="../category.html">分类</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../category/test.html">test (1)</a>
+  </li>
+   
+</ul>
 
-</div>
+<h3>
+  <a href="../archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2021.html">2021 (2)</a>
+  </li>
+   
+</ul>
 
 </div>
 
@@ -267,23 +243,6 @@ commentsRunWhenDOMLoaded(addUtterances);
             </button>
             
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/start/math/index.md.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -291,16 +250,14 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/nocode-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/blog-demo"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/nocode-book/issues/new?title=Issue%20on%20page%20%2Fstart/math/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/blog-demo/issues/new?title=Issue%20on%20page%20%2Fdocs/language/chinese.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/nocode-book/edit/main/docs/start/math/index.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+        
     </div>
 </div>
 
@@ -325,85 +282,68 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>数学<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>简单使用：</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">$</span></code> 表示行内公式：</p>
-<div class="sphinx-bs container-fluid pb-1 docutils">
-<div class="row docutils">
-<div class="d-flex col-12 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header border-0 bg-info docutils">
-<p class="card-text">myst</p>
-</div>
-<div class="card-body docutils">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="d-flex col-12 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header border-0 bg-info docutils">
-<p class="card-text">预览</p>
-</div>
-<div class="card-body docutils">
-<p class="card-text">质能守恒方程可以用一个很简洁的方程式 <span class="math notranslate nohighlight">\(E=mc^2\)</span> 来表达。</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$$</span></code> 表示整行公式：</p>
-<div class="sphinx-bs container-fluid pb-1 docutils">
-<div class="row docutils">
-<div class="d-flex col-12 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header border-0 bg-info docutils">
-<p class="card-text">myst</p>
-</div>
-<div class="card-body docutils">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$$\sum_{i=1}^n a_i=0$$
+                
+<div class="section">
+  <h1>
+     帖子  Chinese 
+  </h1>
+   
 
-$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+  <div class="section">
+    <h2>
+      <a href="../../test.html"
+        >测试</a
+      >
+    </h2>
 
-$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="d-flex col-12 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header border-0 bg-info docutils">
-<p class="card-text">预览</p>
-</div>
-<div class="card-body docutils">
-<div class="math notranslate nohighlight">
-\[\sum_{i=1}^n a_i=0\]</div>
-<div class="math notranslate nohighlight">
-\[f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 \]</div>
-<div class="math notranslate nohighlight">
-\[\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}\]</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> Fri Dec 31 23:00:00 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../author/%E5%88%98%E6%96%B0%E4%BC%9F.html">刘新伟</a>  
 </li>
-</ul>
-<div class="toctree-wrapper compound">
-</div>
-</div>
+  
+<li id="language">
+  <span
+    ><i class="fa-fw fa fa-language"></i></span
+  >
+   
+  <a href="#">Chinese</a>  
+</li>
+ 
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../category/test.html">test</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i
+      class="fa-fw fa fa-tag"
+    ></i
+    ></span
+  >
+   
+  <a href="../tag/basic.html">basic</a>  
+</li>
+ 
+    </ul>
+    <p>测试页面。</p>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/nocode-book",
+            repo: "xinetzone/blog-demo",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -412,13 +352,71 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./start/math"
+            path: "./docs/language"
         },
         predefinedOutput: true
     }
     </script>
     <script>kernelName = 'python3'</script>
-<div class="section">
+    <p><a href="../../test.html">阅读更多 ...</a></p>
+    <hr />
+  </div>
+  
+
+  <div class="section">
+    <h2>
+      <a href="../../index.html"
+        >上善若水</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> Fri Dec 31 23:00:00 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../author/%E5%88%98%E6%96%B0%E4%BC%9F.html">刘新伟</a>  
+</li>
+  
+<li id="language">
+  <span
+    ><i class="fa-fw fa fa-language"></i></span
+  >
+   
+  <a href="#">Chinese</a>  
+</li>
+   
+    </ul>
+    <p><a class="reference internal" href="../../genindex.html"><span class="std std-ref">索引</span></a></p>
+<p><a class="reference internal" href="../../py-modindex.html"><span class="std std-ref">模块索引</span></a></p>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/blog-demo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs/language"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+    <p><a href="../../index.html">阅读更多 ...</a></p>
+    <hr />
+  </div>
    
 </div>
 
@@ -426,21 +424,7 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../narrative.html" title="上一页 页">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">叙事</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="basic.html" title="下一页 页">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">基础</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
         
         </div>
